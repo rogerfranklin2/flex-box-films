@@ -1,0 +1,8 @@
+{
+  "name": "flex-example",
+  "version": "0.0.1",
+  "description": "Simple css flex example",
+  "dependencies": {
+    "express": "4.3.1"
+  }
+}
