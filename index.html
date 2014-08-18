@@ -1,9 +1,74 @@
 <html>
 <head>
-    <title></title>
+    <title>Flex box film example</title>
+
+    <style>
+        header{ height: 70px; width: 100%;}
+        .container { max-width: 50rem; margin: 0 auto;}
+
+        #Grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        #Grid div {
+            border: 1px solid #333;
+            position: relative;
+            margin: 2% 0;
+            flex: 0 0 31%;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            #Grid div {
+            flex: 0 0 47%; margin-bottom: 7%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #Grid div {
+            flex: 0 0 100%; margin-bottom: 7%;
+            }
+        }
+
+
+
+    </style>
 </head>
 <body>
-Hello world
+
+<header>Favorite Films</header>
+
+<div class="container">
+
+    <div id="Grid">
+        <div>
+            <p>O'Brother Where Art Thou</p>
+        </div>
+        <div>
+            <p>City of God</p>
+        </div>
+        <div>
+            <p>Game of thrones</p>
+        </div>
+        <div>
+            <p>Breaking bad</p>
+        </div>
+        <div>
+            <p>Utopia</p>
+        </div>
+        <div>
+            <p>I cant think of any films so im naming TV shows</p>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<footer> Created by Roger </footer>
 
 </body>
 </html>
