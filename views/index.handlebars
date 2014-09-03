@@ -45,11 +45,22 @@
 		background-color: #F3843E;
 		}
 
-		.overlay {
-		display:none;
-		}
 
-	</style>
+      .overlay    {
+      top: -453px;
+      max-height: 100%;
+      text-align: center
+      background:rgba(0,0,0,.75);
+      text-align:center;
+      padding:45px 0 66px 0;
+      opacity:0;
+      -webkit-transition: opacity .25s ease;
+      -moz-transition: opacity .25s ease;}
+
+      .movie:hover .overlay {
+      opacity:1;}
+
+    </style>
 </head>
 <body>
 
